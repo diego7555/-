@@ -6,10 +6,58 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "RU");
-	int number;
+	int month;
+	int number2;
 	cout << " \n[ + ] Календарь" << "\n[ 1 ] Январь" << "\n[ 2 ] Февраль" << "\n[ 3 ] Март" << "\n[ 4 ] Апрель" << "\n[ 5 ] Май" << "\n[ 6 ] Июнь" << "\n[ 7 ] Июль" << "\n[ 8 ] Август" << "\n[ 9 ] Сентябрь" << "\n[ 10 ] Октябрь" << "\n[ 11 ] Ноябрь" << "\n[ 12 ] Декабрь" << "\n[ + ] Выберите месяц ";
-	cin>> number;
-	switch
+	cin >> month;
+	switch (month) {
+	case 1:
+		cout << " \n [ + ] Выбран месяц - " <<" Январь";
+		break;
+	case 2:
+		cout << " \n [ + ] Выбран месяц - " << " Ферваль";
+		break;
+	case 3:
+		cout << " \n [ + ] Выбран месяц - " << " Март";
+		break;
+	case 4:
+		cout << " \n [ + ] Выбран месяц - " << " Апрель";
+		break;
+	case 5:
+		cout << " \n [ + ] Выбран месяц - " << " Май";
+		break;
+	case 6:
+		cout << " \n [ + ] Выбран месяц - " << " Июнь";
+		break;
+	case 7:
+		cout << " \n [ + ] Выбран месяц - " << " Июль";
+		break;
+	case 8:
+		cout << " \n [ + ] Выбран месяц - " << " Август";
+		break;
+	case 9:
+		cout << " \n [ + ] Выбран месяц - " << " Сентябрь";
+		break;
+	case 10:
+		cout << " \n [ + ] Выбран месяц - " << " Октябрь";
+		break;
+	case 11:
+		cout << " \n [ + ] Выбран месяц - " << " Ноябрь";
+		break;
+	case 12:
+		cout << " \n [ + ] Выбран месяц - " << " Декабрь";
+		break;
+	default:
+		cout << " Такого месяца нет:( "<< endl;
+		break;
+
+		
+
+
+	}
+	cout << "\n [ + ] Выберите день месяца - ";
+	cin >> number2;
+
 
 
 
@@ -18,6 +66,5 @@ int main()
 	int abcd;
 	cin >> abcd;
 
-   
-}
 
+}
