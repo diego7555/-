@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    setlocale(LC_ALL, "rus");
+
+    while (true) {  // Бесконечный цикл, выход только при вводе 0
+        cout << "[ + ] Введите число: ";
+        cin >> n;
+
+        // Проверка на выход из программы
+        if (n == 0) {
+            break;  // Выходим из цикла
+        }
+
+        // Проверка корректности ввода
+        if (n < 1 || n > 15) {
+            cout << "[ - ] Ошибка: введите число от 1 до 15." << endl;
+            continue;  // Возвращаемся к началу цикла
+        }
+
+        // Основной цикл вывода сообщений
+        int counter = 1;
+        while (counter <= n) {
+            cout << "[ + ] Цикл отработал. Круг: " << counter << "." << endl;
+            counter++;
+        }
+    }
+
+    return 0;
+}
